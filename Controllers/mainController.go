@@ -9,5 +9,7 @@ type MainController struct {
 }
 
 func (this *MainController) Get() {
-	this.Ctx.Output.Body([]byte("hello"))
+	//this.Ctx.Output.Body([]byte("start" + beegae.AppName))
+	this.TplNames = "index.tpl"
+	//this.Ctx.Output.Body([]byte("end"))
 }
